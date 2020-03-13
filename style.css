@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin-top: 1rem;
+    text-decoration: underline;
+    font-family: -apple-system, BlinkMacSystemFont;
+}
+
+#container {
+    width: 25rem;
+    height: 25rem;
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.fill {
+    width: 7.291rem;
+    height: 7.291rem;
+    background-color: tomato;
+    cursor: move;
+}
+
+.invisible {
+    display: none;
+}
+
+.hovered {
+    background-color: rgb(255, 155, 155);
+    border-style: dashed;
+}
